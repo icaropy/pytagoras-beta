@@ -22,7 +22,7 @@ variaveis.append(linha.split(','))
 try:
 	variaveis = [map(float, x) for x in variaveis]
 except: 
-	print "Voce inseriu algo de maneira errada"
+	pass
 if len(variaveis[0][2]) == 0:
 	print pitagoras(oposto=variaveis[0][0],adjacente=variaveis[0][1],hipotenusa=None)
 elif len(variaveis[0][1]) == 0:
