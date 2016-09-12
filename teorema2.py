@@ -10,7 +10,6 @@ def pitagoras(oposto=None,adjacente=None,hipotenusa=None):
 	if hipotenusa is None:
 		hipotenusa = float(sqrt(float(oposto)**2 + float(adjacente)**2))
 		return hipotenusa
-		
 print "Pytagoras"
 print "Insira os valores no formato:"
 print "cateto oposto, cateto adjacente, hipotenusa."
@@ -29,4 +28,3 @@ elif len(variaveis[0][1]) == 0:
 	print pitagoras(oposto=variaveis[0][0],adjacente=None,hipotenusa=variaveis[0][2])
 else:
 	print pitagoras(oposto=None,adjacente=variaveis[0][1],hipotenusa=variaveis[0][2])
-	
