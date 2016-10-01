@@ -1,30 +1,32 @@
+#!/usr/bin/python
+# coding: UTF-8
+#H**2 = C **2 + C **2
 from math import sqrt
-#by:icaro
-#versão Beta
-# Teoria de pitagoras
-# forma = a**2 = b**2+c**2
-#usuario informa um triangulo de 90 grau
-#tem que forma a hipotenusa e depois o catento
 
-print('Teorema De Pitagoras')
 
-h = str(input('Informe á hipotenusa do triângulo :'))
-c_1 = int(input('Informe o cateto oposto : '))
-c_2 = int(input('Informe o cateto adjacente :'))
+class teorema:
+	def __init__(hip):
+		print('Teorema de pitagoras *By:H4n0x*')
+		x = [1,2]
+		c = 3
+		d = [0]
+		while c != x:
+			d = +1
+			hip.de = int(input('Possui valor da hipotenusa ? , 2-Para NÂO:'))
+			try:
+				if hip.de == 2:
+					hip.x = str(input('Informe valor da hipotenusa:'))
+					hip.cat = int(input('Informe o cateto oposto:'))
+					hip.cato = int(input('Informe o cateto adjacente: '))
+					v_1 = hip.cat**2 + hip.cato**2
+					print('X = %d' %(v_1))
+					raiz = int(sqrt(v_1))
+					print('Hipotenusa igual á %d' %(raiz))
+			except:
+				print('Hipotenusa x , Nos cateto somente números')
+#chamando a classe
+py = teorema()
+#chamando metodo
+py = hip()
 
-# Hiportenusa = a x
-
-#------------------------------------------------------------------
-
-s = 'x'
-# quando hiportenusa for = x
-if h == s :
-    rels_1 = c_1**2 + c_2**2
-    print('x = ' , rels_1)
-    print('raiz quadrada %d' %(rels_1))
-    #raiz quadrada um numero mutiplicado
-    raiz = int(sqrt(rels_1))
-    print(raiz)
-    input('....')
-#-----------------------------------------------------------------
-
+			
